@@ -1,0 +1,121 @@
+.header {
+    width: 100%;
+    height: 70px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 0 14px;
+}
+
+.logo__wrapper {
+    width: 120px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* search */
+
+.searchBar_wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--cultured);
+    -webkit-border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: var(--fs-7);
+    color: var(--onyx);
+    padding: 10px 15px;
+    padding-right: 50px;
+    border: 0;
+    border: 1px solid var(--cultured);
+    -webkit-border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.search::placeholder {
+    font-size: var(--fs-7);
+    color: var(--onyx);
+}
+
+.searchIcon {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+    transition: color var(--transition-timing);
+}
+
+.searchIcon:hover {
+    color: var(--bittersweet);
+}
+/* menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.actionBtn {
+    position: relative;
+    font-size: 26px;
+    color: var(--eerie-black);
+    padding: 10px
+}
+
+.count {
+    background: var(--bittersweet);
+    color: var(--white);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 10px;
+    font-weight: var(--weight-500);
+    line-height: 1;
+    padding: 2px 4px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        height: fit-content;
+        gap: 16px;
+    }
+}

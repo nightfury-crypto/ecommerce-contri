@@ -1,0 +1,74 @@
+/* .mobileNav__wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.mobileNav__wrapper {
+    background: var(--white);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 0;
+    -webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
+    z-index: 5;
+    display: none;
+}
+.bottom__Nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14px;
+}
+
+.actionBtn {
+    position: relative;
+    font-size: 26px;
+    color: var(--eerie-black);
+    padding: 10px
+}
+
+.count {
+    background: var(--bittersweet);
+  color: var(--white);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 10px;
+  font-weight: var(--weight-500);
+  line-height: 1;
+  padding: 2px 4px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
+
+/* for desktops */
+@media screen and (max-width: 1024px) {
+    .mobileNav__wrapper {
+        display: block;
+    }
+}
